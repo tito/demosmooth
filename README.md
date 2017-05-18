@@ -2,7 +2,7 @@
 
 ## Version 0.2
 
-Algorithm: aiming target position per quarter (pos += (target - pos) / 4.)
+*Approach*: aiming touch position to target position (pos += (target - pos) / 4.)
 
 - Lucie (Galaxy S5): interaction are broken, like she have water on the screen
 - Kovak (?): Scrolling appears smoother but interaction are actually harder or just not triggered
