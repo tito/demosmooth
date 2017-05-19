@@ -85,7 +85,12 @@ class VelocityCarousel(StencilView):
             return True
         ud = touch.ud[self.vuid]
         ud["kx"].update(touch.x)
-        self._container.x += touch.dx
+
+        nx = self._container.x + touch.dx
+        nx = min(0, nx)
+        nx = max(-self._container.width + self.width, nx)
+        self._container.x = nx
+
         return True
 
     def on_touch_up(self, touch):
@@ -93,13 +98,19 @@ class VelocityCarousel(StencilView):
             return super(VelocityCarousel, self).on_touch_up(touch)
         if touch.grab_current is not self:
             return True
+
+        nx = self._container.x + touch.dx
+        nx = min(0, nx)
+        nx = max(-self._container.width + self.width, nx)
+        self._container.x = nx
+
         self._touch = None
         touch.ungrab(self)
         ud = touch.ud[self.vuid]
         ud["kx"].stop(touch.x)
         v = ud["kx"].velocity
         index = ceil(self._container.x / float(self.width))
-        minv = self.width * 2
+        minv = self.width * 6.
         if v > 0:
             self.velocity = max(minv, v)
             self.stop_at = (index   ) * self.width
