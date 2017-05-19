@@ -37,3 +37,5 @@ Mapview works now (was missing INTERNET permission before).
 - Mathieu (One Plus 3t): Carousel is fantastic and fast. RecycleView movement doesn't have the "right" velocity when
 i do fast movement, but unsure if it's related to us or the system. If i do a long movement, it look like it works
 well.
+- Gabriel (xiaomi redmi 3 pro): Like the carousel, no difference on Mapview. Hard to get speed on recycleview.
+- Kived (?): Carousel should go to the nearest slide; no difference on mapview, harder to get inertia on the list, and both need greater damping for low value
