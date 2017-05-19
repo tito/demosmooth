@@ -1,0 +1,6 @@
+*.pyo
+*.pyc
+cache
+.buildozer
+bin
+__pycache__

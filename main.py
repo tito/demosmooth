@@ -3,12 +3,18 @@
 from kivy.lang import Builder
 from kivy.app import App
 from kivy.factory import Factory
+from kivy.effects.kinetic import KineticEffect
+
+# change the default, android have 0.015 friction by defaultvalue
+# but the units is "dips"
+KineticEffect.friction.defaultvalue = 0.015
 
 KV = """
 #:import SmoothTouch smoothtouch.SmoothTouch
 #:import SwitchContainer switchcontainer.SwitchContainer
 #:import CoverImage coverimage.CoverImage
 #:import MapView mapview.MapView
+#:import VelocityCarousel velocitycarousel.VelocityCarousel
 
 <Contact@BoxLayout>:
     index: 0
@@ -63,7 +69,7 @@ GridLayout:
                         source: "data/image5.jpg"
 
                 SmoothTouch:
-                    Carousel:
+                    VelocityCarousel:
                         CoverImage:
                             source: "data/image1.jpg"
                         CoverImage:
