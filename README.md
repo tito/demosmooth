@@ -5,7 +5,7 @@
 *Approach*: aiming touch position to target position (pos += (target - pos) / 4.)
 
 - Lucie (Galaxy S5): interaction are broken, like she have water on the screen
-- Kovak (?): Scrolling appears smoother but interaction are actually harder or just not triggered
+- Kovak (LG 4G): Scrolling appears smoother but interaction are actually harder or just not triggered
 - Mathieu (One Plus 3t): Smooth scrolling but velocity is broken = interaction broken
 - Arnaud (Nexus 5): It is harder to get fast on the list
 
