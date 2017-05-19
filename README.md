@@ -27,3 +27,13 @@ When no input are received in 0.1ms, decrease the velocity by half every frame.
 raw, and the issues became more about the behavior of the widget itself (like the carousel
 should use the velocity instead of doing static animation to the next or previous).
 And the recycleview should have a better maximum velocity or less friction i guess.
+
+## Version 0.4
+
+*Approach*: Nothing changed in the core of the SmoothTouch. The smooth touch carousel version is rebuild in top of
+touch velocity instead of a pre-defined animation. The RecycleView have friction reduced from 0.05 to 0.015.
+Mapview works now (was missing INTERNET permission before).
+
+- Mathieu (One Plus 3t): Carousel is fantastic and fast. RecycleView movement doesn't have the "right" velocity when
+i do fast movement, but unsure if it's related to us or the system. If i do a long movement, it look like it works
+well.
