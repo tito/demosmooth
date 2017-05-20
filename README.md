@@ -40,4 +40,6 @@ well.
 - Gabriel (xiaomi redmi 3 pro): Like the carousel, no difference on Mapview. Hard to get speed on recycleview.
 - Kived (?): Carousel should go to the nearest slide; no difference on mapview, harder to get inertia on the list, and both need greater damping for low value
 - Arnaud (Nexus 5): Carousel and recycleview are more reactive
-- Lucie (Galaxy S5): The carousel don't have "smooth" as the first one, it is more fast and stop without slowing down.
+- Lucie (Galaxy S5): The carousel don't have "smooth" as the first one, it is more fast and stop without slowing down. Don't see any difference in the RecycleView.
+
+**Conclusion**: The new carousel is definitively the way to go. It seems that the whole things is unecessary on some phones: i can clearly see the drag difference between the Galaxy S5 and One Plus 3t: the One Plus shutter much more than the Galaxy S5 on the raw touches. But only in "Kivy" app, nothing can be seen in native lists: which mean somehow they implement a similar algorithm (guessing, not verified).
