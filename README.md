@@ -39,3 +39,5 @@ i do fast movement, but unsure if it's related to us or the system. If i do a lo
 well.
 - Gabriel (xiaomi redmi 3 pro): Like the carousel, no difference on Mapview. Hard to get speed on recycleview.
 - Kived (?): Carousel should go to the nearest slide; no difference on mapview, harder to get inertia on the list, and both need greater damping for low value
+- Arnaud (Nexus 5): Carousel and recycleview are more reactive
+- Lucie (Galaxy S5): The carousel don't have "smooth" as the first one, it is more fast and stop without slowing down.
